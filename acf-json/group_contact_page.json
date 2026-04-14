@@ -1,0 +1,196 @@
+{
+    "key": "group_contact_page",
+    "title": "Contact Page",
+    "fields": [
+        {
+            "key": "field_contact_tab_hero",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_contact_hero_title",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_contact_hero_description",
+            "label": "Hero Description",
+            "name": "hero_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_contact_tab_info",
+            "label": "Contact Info",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_contact_info_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "info_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_contact_info_heading",
+            "label": "Info Heading",
+            "name": "info_heading",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_contact_info_items",
+            "label": "Contact Items",
+            "name": "contact_items",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Contact Item",
+            "sub_fields": [
+                {
+                    "key": "field_contact_item_icon",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "select",
+                    "choices": {
+                        "fa-regular fa-phone": "Phone",
+                        "fa-regular fa-envelope": "Email / Message",
+                        "fa-regular fa-location-dot": "Location / Address",
+                        "fa-regular fa-clock": "Clock / Time",
+                        "fa-regular fa-building": "Building / Office",
+                        "fa-regular fa-map": "Map",
+                        "fa-regular fa-fax": "Fax",
+                        "fa-regular fa-mobile": "Mobile Phone",
+                        "fa-regular fa-globe": "Website / Globe",
+                        "fa-regular fa-calendar": "Calendar"
+                    },
+                    "default_value": "fa-regular fa-phone",
+                    "allow_null": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_contact_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_contact_item_content",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "wysiwyg",
+                    "toolbar": "basic",
+                    "media_upload": 0
+                }
+            ]
+        },
+        {
+            "key": "field_contact_direct_enabled",
+            "label": "Show Direct Contact",
+            "name": "direct_enabled",
+            "type": "true_false",
+            "default_value": 1,
+            "ui": 1
+        },
+        {
+            "key": "field_contact_direct_name",
+            "label": "Direct Contact Name",
+            "name": "direct_name",
+            "type": "text"
+        },
+        {
+            "key": "field_contact_direct_role",
+            "label": "Direct Contact Role",
+            "name": "direct_role",
+            "type": "text"
+        },
+        {
+            "key": "field_contact_direct_avatar",
+            "label": "Avatar Initials",
+            "name": "direct_avatar",
+            "type": "text"
+        },
+        {
+            "key": "field_contact_direct_email",
+            "label": "Direct Email",
+            "name": "direct_email",
+            "type": "email"
+        },
+        {
+            "key": "field_contact_direct_phone",
+            "label": "Direct Phone",
+            "name": "direct_phone",
+            "type": "text"
+        },
+        {
+            "key": "field_contact_map_embed",
+            "label": "Map Embed Code",
+            "name": "map_embed",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_contact_map_link",
+            "label": "Map Link URL",
+            "name": "map_link",
+            "type": "url"
+        },
+        {
+            "key": "field_contact_tab_form",
+            "label": "Contact Form",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_contact_form_heading",
+            "label": "Form Heading",
+            "name": "form_heading",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_contact_form_description",
+            "label": "Form Description",
+            "name": "form_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_contact_form_shortcode",
+            "label": "Contact Form 7 Shortcode",
+            "name": "form_shortcode",
+            "type": "text"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/template-contact.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": ["the_content"],
+    "active": true,
+    "description": "",
+    "modified": 1744770600
+}

@@ -1,0 +1,168 @@
+{
+    "key": "group_footer_settings",
+    "title": "Footer Settings",
+    "fields": [
+        {
+            "key": "field_footer_logo",
+            "label": "Footer Logo",
+            "name": "footer_logo",
+            "type": "image",
+            "instructions": "Logo displayed in footer",
+            "required": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_footer_expertise_title",
+            "label": "Expertise Column Title",
+            "name": "footer_expertise_title",
+            "type": "text",
+            "instructions": "Title for expertise menu column",
+            "default_value": "Expertise",
+            "placeholder": "Expertise"
+        },
+        {
+            "key": "field_footer_portfolio_title",
+            "label": "Portfolio Column Title",
+            "name": "footer_portfolio_title",
+            "type": "text",
+            "instructions": "Title for portfolio menu column",
+            "default_value": "Portfolio",
+            "placeholder": "Portfolio"
+        },
+        {
+            "key": "field_footer_company_title",
+            "label": "Company Column Title",
+            "name": "footer_company_title",
+            "type": "text",
+            "instructions": "Title for company menu column",
+            "default_value": "Company",
+            "placeholder": "Company"
+        },
+        {
+            "key": "field_footer_contact_title",
+            "label": "Contact Column Title",
+            "name": "footer_contact_title",
+            "type": "text",
+            "instructions": "Title for contact section",
+            "default_value": "Get in Touch",
+            "placeholder": "Get in Touch"
+        },
+        {
+            "key": "field_footer_phone",
+            "label": "Phone Number",
+            "name": "footer_phone",
+            "type": "text",
+            "instructions": "Phone number displayed in footer contact section",
+            "required": 0,
+            "placeholder": "+84 28 7300 3130"
+        },
+        {
+            "key": "field_footer_email",
+            "label": "Email Address",
+            "name": "footer_email",
+            "type": "email",
+            "instructions": "Email address displayed in footer contact section",
+            "required": 0,
+            "placeholder": "info@example.com"
+        },
+        {
+            "key": "field_footer_cta_button",
+            "label": "Footer CTA Button",
+            "name": "footer_cta_button",
+            "type": "link",
+            "instructions": "Call-to-action button in footer (e.g., 'Let's Talk')",
+            "required": 0,
+            "return_format": "array"
+        },
+        {
+            "key": "field_footer_address",
+            "label": "Address",
+            "name": "footer_address",
+            "type": "wysiwyg",
+            "instructions": "Company address (supports HTML for line breaks)",
+            "required": 0,
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_footer_copyright",
+            "label": "Copyright Text",
+            "name": "footer_copyright",
+            "type": "text",
+            "instructions": "Copyright text in footer bottom (leave empty for auto-generated)",
+            "placeholder": "© 2025 CommonWorks Consulting. All Rights Reserved."
+        },
+        {
+            "key": "field_show_back_to_top",
+            "label": "Show Back to Top Button",
+            "name": "show_back_to_top",
+            "type": "true_false",
+            "instructions": "Display scroll-to-top button",
+            "default_value": 1,
+            "ui": 1
+        },
+        {
+            "key": "field_show_search_form",
+            "label": "Show Search Form",
+            "name": "show_search_form",
+            "type": "true_false",
+            "instructions": "Display header search form overlay",
+            "default_value": 0,
+            "ui": 1
+        },
+        {
+            "key": "field_search_placeholder",
+            "label": "Search Placeholder",
+            "name": "search_placeholder",
+            "type": "text",
+            "instructions": "Placeholder text for search input",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_show_search_form",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "default_value": "Tìm kiếm...",
+            "placeholder": "Tìm kiếm..."
+        },
+        {
+            "key": "field_search_button_text",
+            "label": "Search Button Text",
+            "name": "search_button_text",
+            "type": "text",
+            "instructions": "Text for search submit button",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_show_search_form",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "default_value": "Tìm",
+            "placeholder": "Tìm"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "footer-settings"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label"
+}

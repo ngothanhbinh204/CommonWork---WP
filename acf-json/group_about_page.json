@@ -1,0 +1,366 @@
+{
+    "key": "group_about_page",
+    "title": "About Page",
+    "fields": [
+        {
+            "key": "field_about_tab_hero",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_about_hero_title",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "required": 1
+        },
+        {
+            "key": "field_about_hero_description",
+            "label": "Hero Description",
+            "name": "hero_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_about_tab_story",
+            "label": "Story",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_about_story_image",
+            "label": "Story Image",
+            "name": "story_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_about_established_badge",
+            "label": "Established Badge",
+            "name": "established_badge",
+            "type": "text",
+            "instructions": "e.g., \"Est. 2017\"",
+            "placeholder": "Est. 2017"
+        },
+        {
+            "key": "field_about_eyebrow_text",
+            "label": "Eyebrow Text",
+            "name": "eyebrow_text",
+            "type": "text"
+        },
+        {
+            "key": "field_about_story_title",
+            "label": "Story Title",
+            "name": "story_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_about_story_paragraphs",
+            "label": "Story Paragraphs",
+            "name": "story_paragraphs",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Paragraph",
+            "sub_fields": [
+                {
+                    "key": "field_about_paragraph",
+                    "label": "Paragraph",
+                    "name": "paragraph",
+                    "type": "wysiwyg",
+                    "toolbar": "basic",
+                    "media_upload": 0
+                }
+            ]
+        },
+        {
+            "key": "field_about_tab_mission_vision",
+            "label": "Mission & Vision",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_about_mv_cards",
+            "label": "Mission & Vision Cards",
+            "name": "mv_cards",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Card",
+            "instructions": "Usually 2 items: Mission and Vision",
+            "max": 2,
+            "sub_fields": [
+                {
+                    "key": "field_about_mv_icon_svg",
+                    "label": "Icon SVG Code",
+                    "name": "icon_svg",
+                    "type": "textarea",
+                    "rows": 4,
+                    "placeholder": "<svg>...</svg>"
+                },
+                {
+                    "key": "field_about_mv_eyebrow",
+                    "label": "Eyebrow",
+                    "name": "eyebrow",
+                    "type": "text"
+                },
+                {
+                    "key": "field_about_mv_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "wysiwyg",
+                    "toolbar": "basic",
+                    "media_upload": 0
+                },
+                {
+                    "key": "field_about_mv_description",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "toolbar": "basic",
+                    "media_upload": 0
+                }
+            ]
+        },
+        {
+            "key": "field_about_tab_values",
+            "label": "Core Values",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_about_values_eyebrow",
+            "label": "Values Eyebrow",
+            "name": "values_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_about_values_title",
+            "label": "Values Title",
+            "name": "values_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_about_values_items",
+            "label": "Values Items",
+            "name": "values_items",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Value",
+            "instructions": "Core values (usually 6 items in 3x2 grid)",
+            "sub_fields": [
+                {
+                    "key": "field_about_value_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_about_value_description",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "toolbar": "basic",
+                    "media_upload": 0
+                }
+            ]
+        },
+        {
+            "key": "field_about_tab_timeline",
+            "label": "Timeline",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_about_timeline_eyebrow",
+            "label": "Timeline Eyebrow",
+            "name": "timeline_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_about_timeline_eyebrow_class",
+            "label": "Timeline Eyebrow Class",
+            "name": "timeline_eyebrow_class",
+            "type": "text",
+            "instructions": "CSS class for eyebrow styling (e.g., \"blue\")",
+            "placeholder": "blue"
+        },
+        {
+            "key": "field_about_timeline_title",
+            "label": "Timeline Title",
+            "name": "timeline_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_about_timeline_items",
+            "label": "Timeline Items",
+            "name": "timeline_items",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Milestone",
+            "sub_fields": [
+                {
+                    "key": "field_about_timeline_date",
+                    "label": "Year/Date",
+                    "name": "date",
+                    "type": "text",
+                    "placeholder": "2017"
+                },
+                {
+                    "key": "field_about_timeline_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_about_timeline_description",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "toolbar": "basic",
+                    "media_upload": 0
+                }
+            ]
+        },
+        {
+            "key": "field_about_tab_team",
+            "label": "Leadership Team",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_about_team_eyebrow",
+            "label": "Team Eyebrow",
+            "name": "team_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_about_team_title",
+            "label": "Team Title",
+            "name": "team_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_about_team_subtitle",
+            "label": "Team Subtitle",
+            "name": "team_subtitle",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_about_team_members",
+            "label": "Team Members",
+            "name": "team_members",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Team Member",
+            "sub_fields": [
+                {
+                    "key": "field_about_member_photo",
+                    "label": "Photo",
+                    "name": "photo",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_about_member_name",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text"
+                },
+                {
+                    "key": "field_about_member_role",
+                    "label": "Role/Title",
+                    "name": "role",
+                    "type": "text"
+                },
+                {
+                    "key": "field_about_member_email",
+                    "label": "Email",
+                    "name": "email",
+                    "type": "email"
+                },
+                {
+                    "key": "field_about_member_phone",
+                    "label": "Phone",
+                    "name": "phone",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_about_tab_cta",
+            "label": "CTA",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_about_cta_title",
+            "label": "CTA Title",
+            "name": "cta_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_about_cta_description",
+            "label": "CTA Description",
+            "name": "cta_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_about_cta_button",
+            "label": "CTA Button",
+            "name": "cta_button",
+            "type": "link",
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/template-about.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": ["the_content"],
+    "active": true,
+    "description": "ACF fields for About Page template with 7 sections",
+    "modified": 1744770200
+}

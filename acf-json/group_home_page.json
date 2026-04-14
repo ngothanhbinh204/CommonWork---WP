@@ -1,0 +1,483 @@
+{
+    "key": "group_home_page",
+    "title": "Home Page",
+    "fields": [
+        {
+            "key": "field_home_tab_hero",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_hero_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "hero_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_hero_title",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_hero_subtitle",
+            "label": "Hero Subtitle",
+            "name": "hero_subtitle",
+            "type": "textarea",
+            "rows": 3
+        },
+        {
+            "key": "field_hero_cta_primary",
+            "label": "Primary CTA",
+            "name": "hero_cta_primary",
+            "type": "link",
+            "return_format": "array"
+        },
+        {
+            "key": "field_hero_cta_secondary",
+            "label": "Secondary CTA",
+            "name": "hero_cta_secondary",
+            "type": "link",
+            "return_format": "array"
+        },
+        {
+            "key": "field_hero_show_scroll",
+            "label": "Show Scroll Indicator",
+            "name": "hero_show_scroll",
+            "type": "true_false",
+            "default_value": 1,
+            "ui": 1
+        },
+        {
+            "key": "field_home_tab_intro",
+            "label": "Intro",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_intro_text",
+            "label": "Intro Text",
+            "name": "intro_text",
+            "type": "wysiwyg",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_home_tab_services",
+            "label": "Services",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_services_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "services_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_services_title",
+            "label": "Services Title",
+            "name": "services_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_services_items",
+            "label": "Services (select from dich_vu post type)",
+            "name": "services_items",
+            "type": "relationship",
+            "instructions": "Select services from the dich_vu post type. They will display with icon, title, excerpt, and link.",
+            "post_type": [
+                "dich_vu"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": 0,
+            "max": 0
+        },
+        {
+            "key": "field_home_tab_sectors",
+            "label": "Sectors",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_sectors_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "sectors_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_sectors_title",
+            "label": "Sectors Title",
+            "name": "sectors_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_sectors_items",
+            "label": "Sectors (select from sector post type)",
+            "name": "sectors_items",
+            "type": "relationship",
+            "instructions": "Select sectors from the sector post type. They will display with featured image, title, and excerpt.",
+            "post_type": [
+                "sector"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": 0,
+            "max": 0
+        },
+        {
+            "key": "field_home_tab_about",
+            "label": "About",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_about_images",
+            "label": "About Images Slider",
+            "name": "about_images",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Image",
+            "sub_fields": [
+                {
+                    "key": "field_about_image",
+                    "label": "Image",
+                    "name": "about_image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "medium"
+                }
+            ]
+        },
+        {
+            "key": "field_about_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "about_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_about_title",
+            "label": "About Title",
+            "name": "about_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_about_content",
+            "label": "About Content",
+            "name": "about_content",
+            "type": "textarea",
+            "rows": 5
+        },
+        {
+            "key": "field_about_link",
+            "label": "About Link",
+            "name": "about_link",
+            "type": "link",
+            "return_format": "array"
+        },
+        {
+            "key": "field_home_tab_stats",
+            "label": "Stats",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_stats_items",
+            "label": "Stats Items",
+            "name": "stats_items",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Stat",
+            "sub_fields": [
+                {
+                    "key": "field_stat_number",
+                    "label": "Number",
+                    "name": "stat_number",
+                    "type": "number",
+                    "min": 0
+                },
+                {
+                    "key": "field_stat_suffix",
+                    "label": "Suffix (e.g., +, K, M)",
+                    "name": "stat_suffix",
+                    "type": "text"
+                },
+                {
+                    "key": "field_stat_label",
+                    "label": "Label",
+                    "name": "stat_label",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_home_tab_why",
+            "label": "Why Choose Us",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_why_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "why_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_why_title",
+            "label": "Why Title",
+            "name": "why_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_why_description",
+            "label": "Description",
+            "name": "why_description",
+            "type": "textarea",
+            "rows": 4
+        },
+        {
+            "key": "field_why_stats",
+            "label": "Why Stats",
+            "name": "why_stats",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Stat",
+            "sub_fields": [
+                {
+                    "key": "field_why_stat_value",
+                    "label": "Value",
+                    "name": "stat_value",
+                    "type": "text"
+                },
+                {
+                    "key": "field_why_stat_label",
+                    "label": "Label",
+                    "name": "stat_label",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_why_cards",
+            "label": "Why Cards",
+            "name": "why_cards",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Card",
+            "sub_fields": [
+                {
+                    "key": "field_why_card_icon",
+                    "label": "Icon (SVG Code or Image)",
+                    "name": "card_icon",
+                    "type": "textarea",
+                    "rows": 3
+                },
+                {
+                    "key": "field_why_card_title",
+                    "label": "Card Title",
+                    "name": "card_title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_why_card_description",
+                    "label": "Description",
+                    "name": "card_description",
+                    "type": "textarea",
+                    "rows": 3
+                }
+            ]
+        },
+        {
+            "key": "field_home_tab_people",
+            "label": "Our People",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_people_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "people_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_people_title",
+            "label": "People Title",
+            "name": "people_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_people_content",
+            "label": "People Content",
+            "name": "people_content",
+            "type": "textarea",
+            "rows": 5
+        },
+        {
+            "key": "field_people_link",
+            "label": "People Link",
+            "name": "people_link",
+            "type": "link",
+            "return_format": "array"
+        },
+        {
+            "key": "field_people_photos",
+            "label": "People Photos",
+            "name": "people_photos",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Photo",
+            "sub_fields": [
+                {
+                    "key": "field_people_photo",
+                    "label": "Photo",
+                    "name": "people_photo",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                }
+            ]
+        },
+        {
+            "key": "field_home_tab_standards",
+            "label": "Standards & Software",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_standards_title",
+            "label": "Standards Title",
+            "name": "standards_title",
+            "type": "text"
+        },
+        {
+            "key": "field_standards_items",
+            "label": "Standards Items",
+            "name": "standards_items",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Standard/Software",
+            "sub_fields": [
+                {
+                    "key": "field_standard_logo",
+                    "label": "Logo (Image)",
+                    "name": "standard_logo",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_standard_svg_code",
+                    "label": "OR SVG Code",
+                    "name": "standard_svg_code",
+                    "type": "textarea",
+                    "rows": 3
+                },
+                {
+                    "key": "field_standard_name",
+                    "label": "Name",
+                    "name": "standard_name",
+                    "type": "text"
+                },
+                {
+                    "key": "field_standard_link",
+                    "label": "Link (URL)",
+                    "name": "standard_link",
+                    "type": "url"
+                }
+            ]
+        },
+        {
+            "key": "field_home_tab_cta",
+            "label": "CTA",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_cta_title",
+            "label": "CTA Title",
+            "name": "cta_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_cta_description",
+            "label": "CTA Description",
+            "name": "cta_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_cta_button",
+            "label": "CTA Button",
+            "name": "cta_button",
+            "type": "link",
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/template-home.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": ["the_content"],
+    "active": true,
+    "description": "",
+    "modified": 1744770000
+}

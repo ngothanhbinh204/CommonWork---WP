@@ -1,0 +1,153 @@
+{
+    "key": "group_portfolio_page",
+    "title": "Portfolio Page",
+    "fields": [
+        {
+            "key": "field_portfolio_tab_hero",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_portfolio_hero_title",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_portfolio_hero_description",
+            "label": "Hero Description",
+            "name": "hero_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_portfolio_tab_grid",
+            "label": "Portfolio Grid",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_portfolio_grid_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "grid_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_portfolio_grid_title",
+            "label": "Grid Title",
+            "name": "grid_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_portfolio_tab_sectors",
+            "label": "Sectors",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_portfolio_sectors_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "sectors_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_portfolio_sectors_title",
+            "label": "Sectors Title",
+            "name": "sectors_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_portfolio_sectors_items",
+            "label": "Sectors Items",
+            "name": "sectors_items",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Sector",
+            "sub_fields": [
+                {
+                    "key": "field_portfolio_sector_image",
+                    "label": "Image",
+                    "name": "sector_image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_portfolio_sector_title",
+                    "label": "Title",
+                    "name": "sector_title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_portfolio_sector_description",
+                    "label": "Description",
+                    "name": "sector_description",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_portfolio_tab_cta",
+            "label": "CTA",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_portfolio_cta_title",
+            "label": "CTA Title",
+            "name": "cta_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_portfolio_cta_description",
+            "label": "CTA Description",
+            "name": "cta_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_portfolio_cta_button",
+            "label": "CTA Button",
+            "name": "cta_button",
+            "type": "link",
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/template-portfolio.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": ["the_content"],
+    "active": true,
+    "description": "",
+    "modified": 1744770700
+}

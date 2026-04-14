@@ -1,0 +1,96 @@
+{
+    "key": "group_header_settings",
+    "title": "Header Settings",
+    "fields": [
+        {
+            "key": "field_header_logo_icon",
+            "label": "Logo Icon",
+            "name": "header_logo_icon",
+            "type": "image",
+            "instructions": "Upload header logo icon (recommended: PNG with transparent background)",
+            "required": 1,
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all"
+        },
+        {
+            "key": "field_header_logo_text",
+            "label": "Logo Text",
+            "name": "header_logo_text",
+            "type": "image",
+            "instructions": "Upload header logo text\/brand name image",
+            "required": 1,
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all"
+        },
+        {
+            "key": "field_header_phone",
+            "label": "Phone Number",
+            "name": "header_phone",
+            "type": "text",
+            "instructions": "Phone number displayed in mobile menu",
+            "required": 0,
+            "placeholder": "+84 28 7300 3130"
+        },
+        {
+            "key": "field_header_email",
+            "label": "Email Address",
+            "name": "header_email",
+            "type": "email",
+            "instructions": "Email address displayed in mobile menu",
+            "required": 0,
+            "placeholder": "info@example.com"
+        },
+        {
+            "key": "field_header_cta_button",
+            "label": "CTA Button",
+            "name": "header_cta_button",
+            "type": "link",
+            "instructions": "Call-to-action button in header (e.g., 'Get in Touch')",
+            "required": 0,
+            "return_format": "array"
+        },
+        {
+            "key": "field_show_loader",
+            "label": "Show Page Loader",
+            "name": "show_loader",
+            "type": "true_false",
+            "instructions": "Display loading animation on page load",
+            "default_value": 0,
+            "ui": 1
+        },
+        {
+            "key": "field_loader_image",
+            "label": "Loader Image",
+            "name": "loader_image",
+            "type": "image",
+            "instructions": "Image shown during page loading",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_show_loader",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "return_format": "array",
+            "preview_size": "thumbnail"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "header-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label"
+}

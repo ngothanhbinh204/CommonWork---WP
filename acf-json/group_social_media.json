@@ -1,0 +1,73 @@
+{
+    "key": "group_social_media",
+    "title": "Social Media Links",
+    "fields": [
+        {
+            "key": "field_social_media_links",
+            "label": "Social Media Links",
+            "name": "social_media_links",
+            "type": "repeater",
+            "instructions": "Add social media profiles",
+            "required": 0,
+            "layout": "table",
+            "button_label": "Add Social Link",
+            "min": 0,
+            "max": 10,
+            "sub_fields": [
+                {
+                    "key": "field_social_platform",
+                    "label": "Platform",
+                    "name": "platform",
+                    "type": "select",
+                    "required": 1,
+                    "choices": {
+                        "Facebook": "Facebook",
+                        "LinkedIn": "LinkedIn",
+                        "Twitter": "Twitter",
+                        "Instagram": "Instagram",
+                        "YouTube": "YouTube",
+                        "TikTok": "TikTok",
+                        "Pinterest": "Pinterest"
+                    },
+                    "default_value": "Facebook",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_social_url",
+                    "label": "Profile URL",
+                    "name": "url",
+                    "type": "url",
+                    "required": 1,
+                    "placeholder": "https://facebook.com/yourpage"
+                },
+                {
+                    "key": "field_social_icon",
+                    "label": "Icon Class",
+                    "name": "icon",
+                    "type": "text",
+                    "instructions": "FontAwesome icon class (e.g., 'fab fa-facebook-f')",
+                    "required": 1,
+                    "placeholder": "fab fa-facebook-f",
+                    "default_value": "fab fa-facebook-f"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "social-media-settings"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label"
+}
