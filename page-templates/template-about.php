@@ -15,9 +15,12 @@ get_header(); ?>
 	<?php
 	// Section 1: Hero với breadcrumb, title, description
 	get_template_part( 'template-parts/section/about', 'hero' );
+
 	
 	// Section 2: Our Story - Image + badge + content
 	get_template_part( 'template-parts/section/about', 'story' );
+	
+	get_template_part('template-parts/section/home/stats');
 	
 	// Section 3: Mission & Vision cards
 	get_template_part( 'template-parts/section/about', 'mission-vision' );

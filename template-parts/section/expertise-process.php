@@ -15,19 +15,19 @@ if ( ! $process_title && ! have_rows('process_steps') ) return;
 	<div class="expertise-proc__inner __inner">
 		<div class="expertise-proc__head" data-aos="fade-up">
 			<?php if ( $process_eyebrow ) : ?>
-				<div class="highlight__eyebrow">
-					<?php echo esc_html( $process_eyebrow ); ?>
-				</div>
+			<div class="highlight__eyebrow blue">
+				<?php echo esc_html( $process_eyebrow ); ?>
+			</div>
 			<?php endif; ?>
 			<?php if ( $process_title ) : ?>
-				<h2 class="title-section">
-					<?php echo wp_kses_post( $process_title ); ?>
-				</h2>
+			<h2 class="title-section">
+				<?php echo wp_kses_post( $process_title ); ?>
+			</h2>
 			<?php endif; ?>
 		</div>
 		<?php if ( have_rows('process_steps') ) : ?>
-			<div class="expertise-proc__steps">
-				<?php 
+		<div class="expertise-proc__steps">
+			<?php 
 				$step_counter = 0;
 				while ( have_rows('process_steps') ) : the_row(); 
 					$step_counter++;
@@ -36,17 +36,17 @@ if ( ! $process_title && ! have_rows('process_steps') ) return;
 					
 					$delay = ($step_counter - 1) * 100;
 				?>
-					<div class="expertise-proc__step" data-aos="fade-up" data-aos-delay="<?php echo esc_attr( $delay ); ?>">
-						<div class="expertise-proc__num"><?php echo esc_html( $step_counter ); ?></div>
-						<?php if ( $step_title ) : ?>
-							<h4><?php echo esc_html( $step_title ); ?></h4>
-						<?php endif; ?>
-						<?php if ( $step_description ) : ?>
-							<p><?php echo esc_html( $step_description ); ?></p>
-						<?php endif; ?>
-					</div>
-				<?php endwhile; ?>
+			<div class="expertise-proc__step" data-aos="fade-up" data-aos-delay="<?php echo esc_attr( $delay ); ?>">
+				<div class="expertise-proc__num"><?php echo esc_html( $step_counter ); ?></div>
+				<?php if ( $step_title ) : ?>
+				<h4><?php echo esc_html( $step_title ); ?></h4>
+				<?php endif; ?>
+				<?php if ( $step_description ) : ?>
+				<p><?php echo esc_html( $step_description ); ?></p>
+				<?php endif; ?>
 			</div>
+			<?php endwhile; ?>
+		</div>
 		<?php endif; ?>
 	</div>
 </section>

@@ -35,22 +35,6 @@
             "endpoint": 0
         },
         {
-            "key": "field_portfolio_post_tags",
-            "label": "Tags",
-            "name": "portfolio_tags",
-            "type": "repeater",
-            "layout": "table",
-            "button_label": "Add Tag",
-            "sub_fields": [
-                {
-                    "key": "field_portfolio_post_tag",
-                    "label": "Tag",
-                    "name": "tag",
-                    "type": "text"
-                }
-            ]
-        },
-        {
             "key": "field_portfolio_post_tab_projects",
             "label": "Projects",
             "name": "",

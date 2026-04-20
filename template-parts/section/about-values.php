@@ -24,16 +24,16 @@ if ( ! $values_items ) {
 	<div class="about-vals__inner __inner">
 		<div class="about-vals__head" data-aos="fade-up">
 			<?php if ( $values_eyebrow ) : ?>
-				<div class="highlight__eyebrow"><?php echo esc_html( $values_eyebrow ); ?></div>
+			<div class="highlight__eyebrow blue"><?php echo esc_html( $values_eyebrow ); ?></div>
 			<?php endif; ?>
-			
+
 			<?php if ( $values_title ) : ?>
-				<div class="title-section">
-					<?php echo wp_kses_post( $values_title ); ?>
-				</div>
+			<div class="title-section">
+				<?php echo wp_kses_post( $values_title ); ?>
+			</div>
 			<?php endif; ?>
 		</div>
-		
+
 		<div class="about-vals__grid">
 			<?php 
 			$index = 1;
@@ -51,17 +51,17 @@ if ( ! $values_items ) {
 					$delay = 0;
 				}
 			?>
-				<div class="about-val-card" data-aos="fade-up" data-aos-delay="<?php echo esc_attr( $delay ); ?>">
-					<div class="about-val-card__num"><?php echo str_pad( $index, 2, '0', STR_PAD_LEFT ); ?></div>
-					
-					<h3 class="about-val-card__title"><?php echo esc_html( $title ); ?></h3>
-					
-					<?php if ( $description ) : ?>
-						<p class="about-val-card__text">
-							<?php echo wp_kses_post( $description ); ?>
-						</p>
-					<?php endif; ?>
+			<div class="about-val-card" data-aos="fade-up" data-aos-delay="<?php echo esc_attr( $delay ); ?>">
+				<div class="about-val-card__num"><?php echo str_pad( $index, 2, '0', STR_PAD_LEFT ); ?></div>
+
+				<h3 class="about-val-card__title"><?php echo esc_html( $title ); ?></h3>
+
+				<?php if ( $description ) : ?>
+				<div class="about-val-card__text">
+					<?php echo wp_kses_post( $description ); ?>
 				</div>
+				<?php endif; ?>
+			</div>
 			<?php 
 				$index++;
 				$delay += 100;

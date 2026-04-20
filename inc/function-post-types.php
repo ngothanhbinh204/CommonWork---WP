@@ -1,14 +1,14 @@
 <?php
 /**
- * Register custom post type: Dịch vụ (Services)
+ * Register custom post type: Expertise
  */
-create_post_type('dich_vu', array(
-	'name' => 'Dịch vụ',
-	'singular_name' => 'Dịch vụ',
-	'slug' => 'dich-vu',
+create_post_type('expertise', array(
+	'name' => 'Expertise',
+	'singular_name' => 'Expertise',
+	'slug' => 'expertise',
 	'icon' => 'dashicons-portfolio',
 	'menu_position' => 20,
-	'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
+	'supports' => array('title', 'editor', 'thumbnail', 'page-attributes','excerpt'),
 	'has_archive' => false,
 	'public' => true,
 	'show_in_menu' => true,

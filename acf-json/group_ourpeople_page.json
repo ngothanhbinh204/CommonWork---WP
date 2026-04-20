@@ -784,22 +784,20 @@
             "default_value": "",
             "delay": 0
         },
-        {
-            "key": "field_ourpeople_cta_button",
-            "label": "CTA Button",
-            "name": "cta_button",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": false,
-            "conditional_logic": false,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array"
-        }
+         {
+			"key": "field_about_cta_primary",
+			"label": "Primary CTA Button",
+			"name": "cta_primary",
+			"type": "link",
+			"return_format": "array"
+		},
+		{
+			"key": "field_about_cta_secondary",
+			"label": "Secondary CTA Button",
+			"name": "cta_secondary",
+			"type": "link",
+			"return_format": "array"
+		}
     ],
     "location": [
         [

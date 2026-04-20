@@ -16,14 +16,14 @@ if (!$gallery_photos) return;
 	<div class="our-dept__inner __inner">
 		<div class="our-dept__head" data-aos="fade-up">
 			<?php if ($gallery_eyebrow): ?>
-				<div class="highlight__eyebrow"><?php echo esc_html($gallery_eyebrow); ?></div>
+			<div class="highlight__eyebrow blue"><?php echo esc_html($gallery_eyebrow); ?></div>
 			<?php endif; ?>
-			
+
 			<?php if ($gallery_title): ?>
-				<h2 class="title-section" data-text-ripple><?php echo wp_kses_post($gallery_title); ?></h2>
+			<h2 class="title-section" data-text-ripple><?php echo wp_kses_post($gallery_title); ?></h2>
 			<?php endif; ?>
 		</div>
-		
+
 		<div class="our-dept__grid">
 			<?php 
 			$delay_counter = 0;
@@ -34,11 +34,11 @@ if (!$gallery_photos) return;
 				
 				$full_url = $photo['url'] ?? '';
 			?>
-				<div class="our-dept__card" data-aos="fade-up" data-aos-delay="<?php echo esc_attr($delay); ?>">
-					<div class="our-dept__card-img hover-image" data-fancybox="gallery" data-src="<?php echo esc_url($full_url); ?>">
-						<?php echo get_image_attrachment($photo, 'medium_large'); ?>
-					</div>
+			<div class="our-dept__card" data-aos="fade-up" data-aos-delay="<?php echo esc_attr($delay); ?>">
+				<div class="our-dept__card-img" data-fancybox="gallery" data-src="<?php echo esc_url($full_url); ?>">
+					<?php echo get_image_attrachment($photo, 'image'); ?>
 				</div>
+			</div>
 			<?php endforeach; ?>
 		</div>
 	</div>

@@ -2,12 +2,12 @@
 /**
  * Template Part: Services Section
  * 
- * Services grid from dich_vu post type via Relationship field
+ * Services grid from Expertise post type via Relationship field
  * 
  * ACF Fields:
  * - services_eyebrow (Text)
  * - services_title (WYSIWYG)
- * - services_items (Relationship → dich_vu post type)
+ * - services_items (Relationship → Expertise post type)
  * 
  * Service data comes from:
  * - Post Title → service_title

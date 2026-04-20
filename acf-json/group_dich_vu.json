@@ -1,9 +1,9 @@
 {
-    "key": "group_dich_vu",
-    "title": "Dịch vụ - Service Details",
+    "key": "group_expertise",
+    "title": "Expertise - Service Details",
     "fields": [
         {
-            "key": "field_dv_service_icon",
+            "key": "field_expertise_service_icon",
             "label": "Service Icon",
             "name": "service_icon",
             "aria-label": "",
@@ -25,21 +25,21 @@
                     "type": "image",
                     "return_format": "array",
                     "preview_size": "thumbnail",
-                    "parent": "field_dv_service_icon"
+                    "parent": "field_expertise_service_icon"
                 },
                 {
-                    "key": "field_dv_icon_svg",
+                    "key": "field_expertise_icon_svg",
                     "label": "OR SVG Code",
                     "name": "icon_svg",
                     "type": "textarea",
                     "rows": 4,
                     "placeholder": "<svg>...</svg>",
-                    "parent": "field_dv_service_icon"
+                    "parent": "field_expertise_service_icon"
                 }
             ]
         },
         {
-            "key": "field_dv_service_features",
+            "key": "field_expertise_service_features",
             "label": "Service Features",
             "name": "service_features",
             "aria-label": "",
@@ -81,7 +81,7 @@
                     "placeholder": "DA & CC Drawings",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_dv_service_features"
+                    "parent_repeater": "field_expertise_service_features"
                 }
             ]
         }
@@ -91,7 +91,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "dich_vu"
+                "value": "expertise"
             }
         ]
     ],
@@ -102,7 +102,7 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
-    "description": "Custom fields for Service post type",
+    "description": "Custom fields for Expertise post type",
     "show_in_rest": 0,
     "modified": 1744770100
 }

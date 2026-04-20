@@ -15,7 +15,7 @@ get_header(); ?>
 	// Hero Section
 	get_template_part('template-parts/section/expertise', 'hero'); 
 	
-	// Services Section (Relationship to dich_vu post type)
+	// Services Section (Relationship to Expertise post type)
 	get_template_part('template-parts/section/expertise', 'services'); 
 	
 	// Software & Standards Section

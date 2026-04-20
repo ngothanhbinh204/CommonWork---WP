@@ -11,11 +11,11 @@ $software_title = get_field('software_title');
 if ( ! $software_title && ! have_rows('software_tools') ) return;
 ?>
 
-<section class="expertise-sw section-py">
+<section class="expertise-sw section-py bg-dark">
 	<div class="expertise-sw__bg"></div>
 	<div class="expertise-sw__inner __inner">
 		<?php if ( $software_eyebrow ) : ?>
-		<div class="highlight__eyebrow blue" data-aos="fade-up">
+		<div class="highlight__eyebrow" data-aos="fade-up">
 			<?php echo esc_html( $software_eyebrow ); ?>
 		</div>
 		<?php endif; ?>

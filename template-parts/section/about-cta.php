@@ -11,37 +11,41 @@
 
 $cta_title = get_field('cta_title');
 $cta_description = get_field('cta_description');
-$cta_button = get_field('cta_button');
+$cta_button_primary = get_field('cta_primary');
+$cta_button_secondary = get_field('cta_secondary');
 
-if ( ! $cta_title && ! $cta_description && ! $cta_button ) {
-	return;
-}
 ?>
 
 <section class="about-cta">
 	<div class="about-cta__bg"></div>
 	<div class="about-cta__inner __inner" data-aos="fade-up">
 		<?php if ( $cta_title ) : ?>
-			<h2 class="about-cta__title" data-aos="fade-up" data-aos-duration="800">
-				<?php echo wp_kses_post( $cta_title ); ?>
-			</h2>
+		<h2 class="about-cta__title" data-aos="fade-up" data-aos-duration="800">
+			<?php echo wp_kses_post( $cta_title ); ?>
+		</h2>
 		<?php endif; ?>
-		
+
 		<?php if ( $cta_description ) : ?>
-			<p class="about-cta__desc" data-aos="fade-up" data-aos-duration="800">
-				<?php echo wp_kses_post( $cta_description ); ?>
-			</p>
+		<div class="about-cta__desc" data-aos="fade-up" data-aos-duration="800">
+			<?php echo wp_kses_post( $cta_description ); ?>
+		</div>
 		<?php endif; ?>
-		
-		<?php if ( $cta_button && ! empty( $cta_button['url'] ) ) : ?>
-			<div class="about-cta__btns" data-aos="fade-up" data-aos-duration="800">
-				<a class="btn btn-secondary" 
-				   href="<?php echo esc_url( $cta_button['url'] ); ?>"
-				   <?php echo ( ! empty( $cta_button['target'] ) ) ? 'target="' . esc_attr( $cta_button['target'] ) . '"' : ''; ?>>
-					<?php echo esc_html( $cta_button['title'] ?: 'Start a Conversation' ); ?>
-					<span class="btn-hero__arrow">→</span>
-				</a>
-			</div>
-		<?php endif; ?>
+
+		<div class="about-cta__btns" data-aos="fade-up" data-aos-duration="800">
+			<?php if ( $cta_button_primary && ! empty( $cta_button_primary['url'] ) ) : ?>
+			<a class="btn btn-secondary" href="<?php echo esc_url( $cta_button_primary['url'] ); ?>"
+				<?php echo ( ! empty( $cta_button_primary['target'] ) ) ? 'target="' . esc_attr( $cta_button_primary['target'] ) . '"' : ''; ?>>
+				<?php echo esc_html( $cta_button_primary['title'] ?: 'Start a Conversation' ); ?>
+				<span class="btn-hero__arrow">→</span>
+			</a>
+			<?php endif; ?>
+
+			<?php if ( $cta_button_secondary && ! empty( $cta_button_secondary['url'] ) ) : ?>
+			<a class="btn btn-ghost" href="<?php echo esc_url( $cta_button_secondary['url'] ); ?>"
+				<?php echo ( ! empty( $cta_button_secondary['target'] ) ) ? 'target="' . esc_attr( $cta_button_secondary['target'] ) . '"' : ''; ?>>
+				<?php echo esc_html( $cta_button_secondary['title'] ?: 'Learn More' ); ?>
+			</a>
+			<?php endif; ?>
+		</div>
 	</div>
 </section>

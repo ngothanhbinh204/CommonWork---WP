@@ -23,14 +23,14 @@ if (!$hero_title) return;
 			</div>
 		</div>
 		<?php if ($hero_title): ?>
-			<h1 class="about-hero__title" data-aos="fade-up" data-aos-delay="400">
-				<?php echo wp_kses_post($hero_title); ?>
-			</h1>
+		<h1 class="about-hero__title" data-aos="fade-up" data-aos-delay="400">
+			<?php echo wp_kses_post($hero_title); ?>
+		</h1>
 		<?php endif; ?>
 		<?php if ($hero_description): ?>
-			<p class="about-hero__desc" data-aos="fade-up" data-aos-delay="600">
-				<?php echo wp_kses_post($hero_description); ?>
-			</p>
+		<div class="about-hero__desc" data-aos="fade-up" data-aos-delay="600">
+			<?php echo wp_kses_post($hero_description); ?>
+		</div>
 		<?php endif; ?>
 	</div>
 </section>

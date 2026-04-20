@@ -68,7 +68,7 @@ if ( function_exists( 'wp_enqueue_script' ) ) {
 	<section class="pj-detail<?php echo $is_alt; ?>" data-section="<?php echo esc_attr($project_number); ?>">
 		<div class="pj-detail__inner __inner">
 			<div class="pj-detail__info" data-aos="fade-right">
-				<div class="highlight__eyebrow"><?php echo esc_html($project_number); ?></div>
+				<div class="highlight__eyebrow blue"><?php echo esc_html($project_number); ?></div>
 				<?php if (!empty($project['project_title'])): ?>
 				<h2 class="title-section"><?php echo esc_html($project['project_title']); ?></h2>
 				<?php endif; ?>
@@ -104,7 +104,12 @@ if ( function_exists( 'wp_enqueue_script' ) ) {
 					</button>
 					<button class="pj-detail__btn pj-detail__btn--fs" type="button" aria-label="View fullscreen"
 						title="View fullscreen">
-						<i class="fa-regular fa-expand"></i>
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<polyline points="15 3 21 3 21 9"></polyline>
+							<polyline points="9 21 3 21 3 15"></polyline>
+							<line x1="21" y1="3" x2="14" y2="10"></line>
+							<line x1="3" y1="21" x2="10" y2="14"></line>
+						</svg>
 					</button>
 				</div>
 			</div>

@@ -80,11 +80,11 @@
         },
         {
             "key": "field_expertise_services",
-            "label": "Services (select from dich_vu post type)",
+            "label": "Services (select from expertise post type)",
             "name": "services",
             "aria-label": "",
             "type": "relationship",
-            "instructions": "Select services from the dich_vu post type. They will display with number, title, description, features, and image.",
+            "instructions": "Select services from the expertise post type. They will display with number, title, description, features, and image.",
             "required": false,
             "conditional_logic": false,
             "wrapper": {
@@ -93,7 +93,7 @@
                 "id": ""
             },
             "post_type": [
-                "dich_vu"
+                "expertise"
             ],
             "post_status": [
                 "publish"
@@ -434,21 +434,19 @@
             "delay": 0
         },
         {
-            "key": "field_expertise_cta_button",
-            "label": "CTA Button",
-            "name": "cta_button",
-            "aria-label": "",
+            "key": "field_cta_button",
+            "label": "CTA Primary",
+            "name": "cta_primary",
             "type": "link",
-            "instructions": "",
-            "required": false,
-            "conditional_logic": false,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
             "return_format": "array"
-        }
+        },
+		{
+			"key": "field_cta_button_secondary",
+			"label": "CTA Secondary",
+			"name": "cta_secondary",
+			"type": "link",
+			"return_format": "array"
+		}
     ],
     "location": [
         [

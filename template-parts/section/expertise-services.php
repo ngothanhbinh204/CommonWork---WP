@@ -1,7 +1,7 @@
 <?php
 /**
  * Template part: Expertise Services Section
- * Uses Relationship field to display selected services from "dich_vu" post type
+ * Uses Relationship field to display selected services from "expertise" post type
  * 
  * @package CanhCamTheme
  */
@@ -40,7 +40,7 @@ foreach ( $services as $post ) :
 		<?php endif; ?>
 		<div class="expertise-sd__txt">
 			<?php if ( $service_number ) : ?>
-			<div class="highlight__eyebrow" data-aos="fade-up"><?php echo esc_html( $service_number ); ?></div>
+			<div class="highlight__eyebrow blue" data-aos="fade-up"><?php echo esc_html( $service_number ); ?></div>
 			<?php endif; ?>
 			<?php if ( $service_title ) : ?>
 			<h2 class="title-section" data-aos="fade-up" data-aos-delay="100">

@@ -29,30 +29,32 @@ $portfolio_query = new WP_Query($portfolio_args);
 		<div class="pfl__inner __inner">
 			<div class="pfl__head" data-aos="fade-up">
 				<?php if ($grid_eyebrow): ?>
-					<div class="highlight__eyebrow"><?php echo esc_html($grid_eyebrow); ?></div>
+				<div class="highlight__eyebrow blue"><?php echo esc_html($grid_eyebrow); ?></div>
 				<?php endif; ?>
-				
+
 				<?php if ($grid_title): ?>
-					<h2 class="title-section"><?php echo wp_kses_post($grid_title); ?></h2>
+				<h2 class="title-section"><?php echo wp_kses_post($grid_title); ?></h2>
 				<?php endif; ?>
-				
+
 				<?php if ($categories && !is_wp_error($categories)): ?>
-					<div class="pfl__tabs" role="tablist" aria-label="Filter projects by discipline">
-						<button class="pfl__tab is-active" data-f="all" role="tab" aria-selected="true">All Projects</button>
-						<?php foreach ($categories as $category): ?>
-							<button class="pfl__tab" data-f="<?php echo esc_attr($category->slug); ?>" role="tab" aria-selected="false">
-								<?php echo esc_html($category->name); ?>
-							</button>
-						<?php endforeach; ?>
-					</div>
+				<div class="pfl__tabs" role="tablist" aria-label="Filter projects by discipline">
+					<button class="pfl__tab is-active" data-f="all" role="tab" aria-selected="true">All
+						Projects</button>
+					<?php foreach ($categories as $category): ?>
+					<button class="pfl__tab" data-f="<?php echo esc_attr($category->slug); ?>" role="tab"
+						aria-selected="false">
+						<?php echo esc_html($category->name); ?>
+					</button>
+					<?php endforeach; ?>
+				</div>
 				<?php endif; ?>
 			</div>
-			
+
 			<div class="pfl__spinner" aria-hidden="true" aria-label="Loading projects"><span></span></div>
-			
+
 			<div class="pfl__grid">
 				<?php if ($portfolio_query->have_posts()): ?>
-					<?php 
+				<?php 
 					$delay = 100;
 					while ($portfolio_query->have_posts()): $portfolio_query->the_post(); 
 						$thumbnail = get_the_post_thumbnail_url(get_the_ID(), 'large');
@@ -64,28 +66,30 @@ $portfolio_query = new WP_Query($portfolio_args);
 							$category_slug = $categories_list[0]->slug;
 						}
 					?>
-						<a class="pfl__card" href="<?php the_permalink(); ?>" data-c="<?php echo esc_attr($category_slug); ?>" data-aos="fade-up" data-aos-delay="<?php echo $delay; ?>">
-							<?php if ($thumbnail): ?>
-								<div class="pfl__card-img" style="background-image:url('<?php echo esc_url($thumbnail); ?>')"></div>
-							<?php endif; ?>
-							<div class="pfl__card-ov"></div>
-							<div class="pfl__card-shine"></div>
-							<span class="pfl__card-view">View Sample Works →</span>
-							<div class="pfl__card-info">
-								<h4><?php the_title(); ?></h4>
-								<?php if ($excerpt): ?>
-									<span><?php echo esc_html($excerpt); ?></span>
-								<?php endif; ?>
-								<?php if ($tags): ?>
-									<div class="pfl__card-tags">
-										<?php foreach ($tags as $tag): ?>
-											<span class="pfl__card-tag"><?php echo esc_html($tag['tag']); ?></span>
-										<?php endforeach; ?>
-									</div>
-								<?php endif; ?>
-							</div>
-						</a>
-					<?php 
+				<a class="pfl__card" href="<?php the_permalink(); ?>" data-c="<?php echo esc_attr($category_slug); ?>"
+					data-aos="fade-up" data-aos-delay="<?php echo $delay; ?>">
+					<?php if ($thumbnail): ?>
+					<div class="pfl__card-img" style="background-image:url('<?php echo esc_url($thumbnail); ?>')"></div>
+					<?php endif; ?>
+					<div class="pfl__card-ov"></div>
+					<div class="pfl__card-shine"></div>
+					<span class="pfl__card-view">
+						<?php _e('View Sample Works', 'canhcamtheme'); ?> →</span>
+					<div class="pfl__card-info">
+						<h4><?php the_title(); ?></h4>
+						<?php if ($excerpt): ?>
+						<span><?php echo esc_html($excerpt); ?></span>
+						<?php endif; ?>
+						<!-- <?php if ($tags): ?>
+						<div class="pfl__card-tags">
+							<?php foreach ($tags as $tag): ?>
+							<span class="pfl__card-tag"><?php echo esc_html($tag['tag']); ?></span>
+							<?php endforeach; ?>
+						</div>
+						<?php endif; ?> -->
+					</div>
+				</a>
+				<?php 
 					$delay += 100;
 					if ($delay > 300) $delay = 100;
 					endwhile; 

@@ -63,9 +63,9 @@ if ( ! $timeline_items ) {
 				<?php endif; ?>
 
 				<?php if ( $description ) : ?>
-				<p class="about-tl-item__text">
+				<div class="about-tl-item__text">
 					<?php echo wp_kses_post( $description ); ?>
-				</p>
+				</div>
 				<?php endif; ?>
 			</div>
 		</div>

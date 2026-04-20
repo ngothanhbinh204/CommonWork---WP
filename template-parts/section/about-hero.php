@@ -24,23 +24,23 @@ if ( ! $hero_title && ! $hero_description ) {
 		<div class="global-breadcrumb">
 			<div class="container">
 				<?php if ( function_exists('rank_math_the_breadcrumbs') ) : ?>
-					<nav class="rank-math-breadcrumb" aria-label="breadcrumbs" data-aos="fade-down" data-aos-delay="200">
-						<?php rank_math_the_breadcrumbs(); ?>
-					</nav>
+				<nav class="rank-math-breadcrumb" aria-label="breadcrumbs" data-aos="fade-down" data-aos-delay="200">
+					<?php rank_math_the_breadcrumbs(); ?>
+				</nav>
 				<?php endif; ?>
 			</div>
 		</div>
-		
+
 		<?php if ( $hero_title ) : ?>
-			<h1 class="about-hero__title" data-aos="fade-up" data-aos-delay="400">
-				<?php echo wp_kses_post( $hero_title ); ?>
-			</h1>
+		<h1 class="about-hero__title" data-aos="fade-up" data-aos-delay="400">
+			<?php echo wp_kses_post( $hero_title ); ?>
+		</h1>
 		<?php endif; ?>
-		
+
 		<?php if ( $hero_description ) : ?>
-			<p class="about-hero__desc" data-aos="fade-up" data-aos-delay="600">
-				<?php echo wp_kses_post( $hero_description ); ?>
-			</p>
+		<div class="about-hero__desc" data-aos="fade-up" data-aos-delay="600">
+			<?php echo wp_kses_post( $hero_description ); ?>
+		</div>
 		<?php endif; ?>
 	</div>
 </section>

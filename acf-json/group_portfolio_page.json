@@ -74,30 +74,15 @@
             "key": "field_portfolio_sectors_items",
             "label": "Sectors Items",
             "name": "sectors_items",
-            "type": "repeater",
-            "layout": "table",
-            "button_label": "Add Sector",
-            "sub_fields": [
-                {
-                    "key": "field_portfolio_sector_image",
-                    "label": "Image",
-                    "name": "sector_image",
-                    "type": "image",
-                    "return_format": "array",
-                    "preview_size": "medium"
-                },
-                {
-                    "key": "field_portfolio_sector_title",
-                    "label": "Title",
-                    "name": "sector_title",
-                    "type": "text"
-                },
-                {
-                    "key": "field_portfolio_sector_description",
-                    "label": "Description",
-                    "name": "sector_description",
-                    "type": "text"
-                }
+            "type": "relationship",
+            "post_type": [
+                "sector"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "filters": [
+                "search"
             ]
         },
         {
@@ -124,13 +109,20 @@
             "toolbar": "basic",
             "media_upload": 0
         },
-        {
-            "key": "field_portfolio_cta_button",
-            "label": "CTA Button",
-            "name": "cta_button",
-            "type": "link",
-            "return_format": "array"
-        }
+         {
+			"key": "field_about_cta_primary",
+			"label": "Primary CTA Button",
+			"name": "cta_primary",
+			"type": "link",
+			"return_format": "array"
+		},
+		{
+			"key": "field_about_cta_secondary",
+			"label": "Secondary CTA Button",
+			"name": "cta_secondary",
+			"type": "link",
+			"return_format": "array"
+		}
     ],
     "location": [
         [

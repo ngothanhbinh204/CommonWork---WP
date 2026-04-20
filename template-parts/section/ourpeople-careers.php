@@ -18,7 +18,7 @@ if (!$careers_title && !$careers_image) return;
 	<div class="our-join__inner __inner">
 		<div class="our-join__txt">
 			<?php if ($careers_eyebrow): ?>
-			<div class="highlight__eyebrow" data-aos="fade-up"><?php echo esc_html($careers_eyebrow); ?></div>
+			<div class="highlight__eyebrow blue" data-aos="fade-up"><?php echo esc_html($careers_eyebrow); ?></div>
 			<?php endif; ?>
 
 			<?php if ($careers_title): ?>
@@ -45,7 +45,7 @@ if (!$careers_title && !$careers_image) return;
 		<?php if ($careers_image): ?>
 		<div class="our-join__img" data-aos="fade-up" data-aos-delay="200" data-fancybox
 			data-src="<?php echo esc_url($careers_image['url']); ?>" data-parallax data-parallax-y="20">
-			<?php echo get_image_attrachment($careers_image, 'large', '', '', 'data-parallax-img'); ?>
+			<img src="<?php echo get_image_attrachment($careers_image, 'url'); ?>" alt="" data-parallax-img>
 		</div>
 		<?php endif; ?>
 	</div>

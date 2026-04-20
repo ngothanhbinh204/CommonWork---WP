@@ -28,7 +28,7 @@ if ( ! $story_image && ! $story_title && ! $story_paragraphs ) {
 		<?php if ( $story_image ) : ?>
 		<div class="about-story__img" data-aos="fade-right" data-aos-duration="900">
 			<?php 
-				echo get_image_attrachment( $story_image['ID'], 'full', '', '' ); 
+				echo get_image_attrachment( $story_image['ID'], 'image' ); 
 				?>
 
 			<?php if ( $story_badge ) : ?>
@@ -39,15 +39,15 @@ if ( ! $story_image && ! $story_title && ! $story_paragraphs ) {
 
 		<div class="about-story__text">
 			<?php if ( $story_eyebrow ) : ?>
-			<div class="highlight__eyebrow" data-aos="fade-up">
+			<div class="highlight__eyebrow blue" data-aos="fade-up">
 				<?php echo esc_html( $story_eyebrow ); ?>
 			</div>
 			<?php endif; ?>
 
 			<?php if ( $story_title ) : ?>
-			<p class="about-story__title" data-aos="fade-up" data-aos-delay="100">
+			<div class="about-story__title title-section" data-aos="fade-up" data-aos-delay="100">
 				<?php echo wp_kses_post( $story_title ); ?>
-			</p>
+			</div>
 			<?php endif; ?>
 
 			<?php if ( $story_paragraphs ) : ?>

@@ -338,12 +338,19 @@
             "media_upload": 0
         },
         {
-            "key": "field_about_cta_button",
-            "label": "CTA Button",
-            "name": "cta_button",
-            "type": "link",
-            "return_format": "array"
-        }
+			"key": "field_about_cta_primary",
+			"label": "Primary CTA Button",
+			"name": "cta_primary",
+			"type": "link",
+			"return_format": "array"
+		},
+		{
+			"key": "field_about_cta_secondary",
+			"label": "Secondary CTA Button",
+			"name": "cta_secondary",
+			"type": "link",
+			"return_format": "array"
+		}
     ],
     "location": [
         [

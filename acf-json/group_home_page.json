@@ -93,12 +93,12 @@
         },
         {
             "key": "field_services_items",
-            "label": "Services (select from dich_vu post type)",
+            "label": "Services (select from Expertise post type)",
             "name": "services_items",
             "type": "relationship",
-            "instructions": "Select services from the dich_vu post type. They will display with icon, title, excerpt, and link.",
+            "instructions": "Select services from the Expertise post type. They will display with icon, title, excerpt, and link.",
             "post_type": [
-                "dich_vu"
+                "expertise"
             ],
             "post_status": [
                 "publish"
@@ -456,11 +456,18 @@
         },
         {
             "key": "field_cta_button",
-            "label": "CTA Button",
-            "name": "cta_button",
+            "label": "CTA Primary",
+            "name": "cta_primary",
             "type": "link",
             "return_format": "array"
-        }
+        },
+		{
+			"key": "field_cta_button_secondary",
+			"label": "CTA Secondary",
+			"name": "cta_secondary",
+			"type": "link",
+			"return_format": "array"
+		}
     ],
     "location": [
         [
