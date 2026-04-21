@@ -1,0 +1,255 @@
+{
+    "key": "group_career_page",
+    "title": "Career Page",
+    "fields": [
+        {
+            "key": "field_career_tab_hero",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_career_hero_title",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_career_hero_description",
+            "label": "Hero Description",
+            "name": "hero_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_career_tab_why",
+            "label": "Why CommonWorks",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_career_why_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "why_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_career_why_eyebrow_class",
+            "label": "Eyebrow Class",
+            "name": "why_eyebrow_class",
+            "type": "text",
+            "instructions": "CSS class for eyebrow (e.g., 'blue')",
+            "placeholder": "blue"
+        },
+        {
+            "key": "field_career_why_title",
+            "label": "Title",
+            "name": "why_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_career_why_description",
+            "label": "Description",
+            "name": "why_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_career_why_cards",
+            "label": "Benefits Cards",
+            "name": "why_cards",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Card",
+            "sub_fields": [
+                {
+                    "key": "field_career_why_card_icon",
+                    "label": "Icon Class",
+                    "name": "icon",
+                    "type": "text",
+                    "instructions": "FontAwesome icon class (e.g., 'fa-regular fa-globe')",
+                    "placeholder": "fa-regular fa-globe"
+                },
+                {
+                    "key": "field_career_why_card_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_career_why_card_text",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "wysiwyg",
+                    "toolbar": "basic",
+                    "media_upload": 0
+                }
+            ]
+        },
+        {
+            "key": "field_career_tab_positions",
+            "label": "Open Positions",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_career_positions_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "positions_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_career_positions_eyebrow_class",
+            "label": "Eyebrow Class",
+            "name": "positions_eyebrow_class",
+            "type": "text",
+            "instructions": "CSS class for eyebrow (e.g., 'blue')",
+            "placeholder": "blue"
+        },
+        {
+            "key": "field_career_positions_title",
+            "label": "Title",
+            "name": "positions_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_career_positions_description",
+            "label": "Description",
+            "name": "positions_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_career_positions_buttons",
+            "label": "Social Buttons",
+            "name": "positions_buttons",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Button",
+            "sub_fields": [
+                {
+                    "key": "field_career_positions_button",
+                    "label": "Button Link",
+                    "name": "button",
+                    "type": "link",
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_career_positions_button_class",
+                    "label": "Button Class",
+                    "name": "button_class",
+                    "type": "text",
+                    "instructions": "Additional CSS classes (e.g., 'btn-primary' or 'btn-ghost btn-ghost--dark')",
+                    "placeholder": "btn-primary"
+                }
+            ]
+        },
+        {
+            "key": "field_career_tab_apply",
+            "label": "Apply Section",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_career_apply_eyebrow",
+            "label": "Eyebrow Text",
+            "name": "apply_eyebrow",
+            "type": "text"
+        },
+        {
+            "key": "field_career_apply_title",
+            "label": "Title",
+            "name": "apply_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_career_apply_description",
+            "label": "Description",
+            "name": "apply_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_career_apply_email",
+            "label": "Email Address",
+            "name": "apply_email",
+            "type": "email"
+        },
+        {
+            "key": "field_career_tab_cta",
+            "label": "CTA",
+            "name": "",
+            "type": "tab",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_career_cta_title",
+            "label": "CTA Title",
+            "name": "cta_title",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_career_cta_description",
+            "label": "CTA Description",
+            "name": "cta_description",
+            "type": "wysiwyg",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_career_cta_primary",
+            "label": "Primary CTA Button",
+            "name": "cta_primary",
+            "type": "link",
+            "return_format": "array"
+        },
+        {
+            "key": "field_career_cta_secondary",
+            "label": "Secondary CTA Button",
+            "name": "cta_secondary",
+            "type": "link",
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/template-career.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": ["the_content"],
+    "active": true,
+    "description": "ACF fields for Career Page template with 5 sections",
+    "modified": 1745280000
+}

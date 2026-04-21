@@ -30,7 +30,7 @@ $form_shortcode = get_field('form_shortcode');
 			<!-- Contact Info (Left Side) -->
 			<div class="contact__info" data-aos="fade-right">
 				<?php if ($info_eyebrow): ?>
-				<div class="highlight__eyebrow"><?php echo esc_html($info_eyebrow); ?></div>
+				<div class="highlight__eyebrow blue"><?php echo esc_html($info_eyebrow); ?></div>
 				<?php endif; ?>
 
 				<?php if ($info_heading): ?>
@@ -88,7 +88,7 @@ $form_shortcode = get_field('form_shortcode');
 
 				<?php if ($map_embed): ?>
 				<div class="ci__map">
-					<?php echo wp_kses_post($map_embed); ?>
+					<?php echo ($map_embed); ?>
 					<?php if ($map_link): ?>
 					<a class="ci__map-link" href="<?php echo esc_url($map_link); ?>" target="_blank"
 						rel="noopener noreferrer">

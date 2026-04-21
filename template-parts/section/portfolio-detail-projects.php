@@ -73,7 +73,7 @@ if ( function_exists( 'wp_enqueue_script' ) ) {
 				<h2 class="title-section"><?php echo esc_html($project['project_title']); ?></h2>
 				<?php endif; ?>
 				<?php if (!empty($project['project_description'])): ?>
-				<p class="pj-detail__desc"><?php echo wp_kses_post($project['project_description']); ?></p>
+				<div class="pj-detail__desc"><?php echo wp_kses_post($project['project_description']); ?></div>
 				<?php endif; ?>
 			</div>
 
